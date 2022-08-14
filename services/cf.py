@@ -59,7 +59,6 @@ async def get_user(handle: str, rating_info: bool = True):
     method_param = f'user.info?handles={handle}'
     # Start to request Info by CF API
     data_dict = await cf_request(method_param=method_param)
-    print(data_dict)
     if data_dict['status'] != 'OK':
         return ('error', 'error')
     user_info = data_dict['result'][0]
