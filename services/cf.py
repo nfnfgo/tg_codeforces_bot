@@ -45,7 +45,7 @@ async def get_contests():
         single_re_text += f'''赛事:<b>{contest_dict['name']}</b> (<code>{contest_dict['id']}</code>)
 赛事状态: <b>{phase_text}</b>
 赛事类型: <b>{contest_dict['type']}</b>
-开始时间: <b>{start_time} UTC</b>
+开始时间: <b>{start_time} UTC+8</b>
 持续时间: <b>{duration}</b>
 
 '''
