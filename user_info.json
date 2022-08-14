@@ -1,0 +1,18 @@
+{
+    "status": "OK",
+    "result": [
+        {
+            "contribution": 0,
+            "lastOnlineTimeSeconds": 1660455022,
+            "rating": 380,
+            "friendOfCount": 0,
+            "titlePhoto": "https://cdn-userpic.codeforces.com/no-title.jpg",
+            "rank": "newbie",
+            "handle": "Oyasuminasai",
+            "maxRating": 380,
+            "avatar": "https://cdn-userpic.codeforces.com/no-avatar.jpg",
+            "registrationTimeSeconds": 1660399993,
+            "maxRank": "newbie"
+        }
+    ]
+}
