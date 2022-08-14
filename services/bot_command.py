@@ -1,5 +1,4 @@
 import asyncio
-from cgi import test
 
 from telebot.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from telebot.async_telebot import AsyncTeleBot
@@ -48,4 +47,4 @@ async def reply(info: Message | CallbackQuery | str | int, bot: AsyncTeleBot, te
     if photo is not None:
         await bot.send_photo(chat_id, photo, caption=text, reply_markup=reply_markup)
     else:
-        await bot.send_message(chat_id, test, reply_markup=reply_markup, disable_web_page_preview=disable_web_page_preview)
+        await bot.send_message(chat_id, text, reply_markup=reply_markup, disable_web_page_preview=disable_web_page_preview)

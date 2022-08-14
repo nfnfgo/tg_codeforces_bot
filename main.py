@@ -11,6 +11,7 @@ from telebot.async_telebot import AsyncTeleBot
 from functions import help
 from functions import timestamp
 from functions import callback
+from functions import list
 from services import regular_caller
 import config
 
@@ -32,7 +33,10 @@ bot = AsyncTeleBot(config.bot.token, parse_mode='HTML')
 bot.register_message_handler(help.help, commands=['help', 'start'], pass_bot=True)
 
 # 通过/timestamp 或者 /ts 来进行时间戳的一些转换
-bot.register_message_handler(timestamp.home, commands=['timestamp','ts'], pass_bot=True)
+bot.register_message_handler(timestamp.home, commands=['timestamp', 'ts'], pass_bot=True)
+
+# Use /list or /l to Check CodeForces Contest Digest
+bot.register_message_handler(list.home, commands=['list', 'l'], pass_bot=True)
 
 bot.register_callback_query_handler(callback.cbq_master, func=lambda query: True, pass_bot=True)
 
