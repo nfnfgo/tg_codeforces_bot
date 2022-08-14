@@ -47,10 +47,10 @@ async def async_main(path: str):
     sys.path.append(path)
     bot = AsyncTeleBot(token=config.bot.token, parse_mode='HTML')
     # 可以通过二次创建multiprocess来实现激活更多的定时器，同时经过验证，在这里激活的定时器貌似不需要进行环境设置
-    p = Process(target=regular_update_user_level_main, args=('this is a test thing',))
-    p.start()
-    p2 = multiprocessing.Process(target=regular_push_home)
-    p2.start()
+    # p = Process(target=regular_update_user_level_main, args=('this is a test thing',))
+    # p.start()
+    # p2 = multiprocessing.Process(target=regular_push_home)
+    # p2.start()
 
 
 # push推送消息激活器
